@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Commons\" />
     <Folder Include="Entities\" />
-    <Folder Include="Enums\" />
   </ItemGroup>
 
 </Project>
