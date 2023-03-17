@@ -14,13 +14,13 @@ namespace Data.Context
         {
             optionsBuilder.UseNpgsql("Server = localhost; Database = Github_Project; User Id = postgres; password = 1968;");
         }
-        DbSet<User> Users { get; set; }
-        DbSet<Repository> Repositories { get; set; }
-        DbSet<Languages> Languages { get; set; }
-        DbSet<Organization> Organizations { get; set; }
-        DbSet<Star> Stars { get; set; }
-        DbSet<Follower> Followeres { get; set;}
-        DbSet<Following> Followings{ get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Repository> Repositories { get; set; }
+        public DbSet<Languages> Languages { get; set; }
+        public DbSet<Organization> Organizations { get; set; }
+        public DbSet<Star> Stars { get; set; }
+        public DbSet<Follower> Followeres { get; set;}
+        public DbSet<Following> Followings{ get; set; }
 
 
     }
