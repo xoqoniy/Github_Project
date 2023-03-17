@@ -1,13 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+
+﻿using AutoMapper;
+using Domain.Entities;
+using Service.DTOs;
+
+
 namespace Service.Mappers
 {
     public class MappingProfile : Profile
     {
-        //CreateMap<UserForCreationDto, User>().ReverseMap();
+
+        public MappingProfile()
+        {
+            CreateMap<UserForCreationDto, User>().ReverseMap();
+            CreateMap<UserDto, User>().ReverseMap();
+        }
+
     }
 }
