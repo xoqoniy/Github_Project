@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service.DTOs
+namespace Service.Interfaces
 {
-    public class UserForCreationDto
+    internal class IOrganizationService
     {
-
     }
 }
