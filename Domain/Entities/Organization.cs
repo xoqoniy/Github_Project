@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Commons;
 
 namespace Domain.Entities
 {
-    internal class Organization
+    public class Organization : Auditable
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string People { get; set; }
+        public long RepositoryId { get; set; }
+
     }
 }

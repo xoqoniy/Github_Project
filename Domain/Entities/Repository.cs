@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Commons;
+using Domain.Enums;
 
 namespace Domain.Entities
 {
-    internal class Repository
+    public class Repository : Auditable
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public Privacy_Status RepositoryType { get; set; } = Privacy_Status.Public;
+        public long UserId { get; set; }
+        public int StarsCount { get; set; }
+        public long OrganizationId { get; set; }
+
     }
 }
