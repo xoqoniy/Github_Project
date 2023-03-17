@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.IRepositories
+namespace Domain.Commons
 {
-    //public interface IUserRepository
-    //{
-    //    ValueTask<>
-    //}
+    internal class Auditable
+    {
+    }
 }
