@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Commons
 {
-    internal class Auditable
+    public class Auditable
     {
+        public long Id { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set;}
     }
 }
