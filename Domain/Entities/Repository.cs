@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Enums
+namespace Domain.Entities
 {
-    public enum Privacy_Status
+    internal class Repository
     {
-        Public = 10,
-        Private = 20
     }
 }
