@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.Entities
+﻿namespace Domain.Entities
 {
-    internal class Languages
+    public class Languages
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public long RepositoryId { get; set; }
+
     }
 }
