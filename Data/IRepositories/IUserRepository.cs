@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Data.IRepositories
 {
-    public class IUserRepository
-    {
-    }
+    //public interface IUserRepository
+    //{
+    //    ValueTask<>
+    //}
 }

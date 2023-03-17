@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Commons;
+using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Entities
 {
-    internal class User
+    public class User : Auditable
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string? Description { get; set; }
+        public string? Link { get; set; }
+
+        public string Email { get; set; }
+        [Required, MinLength(4)]
+        public string Password { get; set; }
+
     }
 }
