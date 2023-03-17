@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Enums
 {
-    internal class Privacy_Status
+    public enum Privacy_Status
     {
+        Public = 10,
+        Private = 20
     }
 }
