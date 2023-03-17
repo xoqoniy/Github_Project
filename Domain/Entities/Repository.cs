@@ -10,14 +10,17 @@ namespace Domain.Entities
         public Privacy_Status RepositoryType { get; set; } = Privacy_Status.Public;
 
         public long UserId { get; set; }
-        public User user { get; set; }
+        public User? user { get; set; }
 
 
-        public int StarsCount { get; set; }
+        public int StarsCount { get; set; } = 0;
 
+
+        public long? OrganizationId { get; set; }
+        public Organization? Organization { get; set; }
+        public List<Star>? Stars { get; set; }
         
-        public long OrganizationId { get; set; }
-        public Organization organization { get; set; }
 
     }
+
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Followers : Auditable
+    public class Follower : Auditable
     {
         public long UserId { get; set; }
         public User user { get; set; }
