@@ -6,8 +6,8 @@ namespace Domain.Entities
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public string People { get; set; }
-        public long RepositoryId { get; set; }
+        public List<OrganizationMember> organizationMembers { get; set; }
+        public List<Repository> Repositories { get; set; }
 
     }
 }
