@@ -1,4 +1,9 @@
-﻿using Service.DTOs;
+﻿using AutoMapper;
+using Data.IRepositories;
+using Data.Repositories;
+using Domain.Entities;
+
+using Service.DTOs;
 using Service.Helpers;
 using Service.Interfaces;
 using System;
@@ -7,9 +12,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service.Services
+namespace GitApp.Service.Services
 {
-    public class OrganizationService : IOrganizationService
+    public class OrganisationService : IOrganizationService
     {
         public ValueTask<Response<OrganizationDto>> AddUserAsync(OrganizationDto OrganizationDto)
         {

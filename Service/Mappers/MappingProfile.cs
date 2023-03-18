@@ -13,6 +13,7 @@ namespace Service.Mappers
         {
             CreateMap<UserForCreationDto, User>().ReverseMap();
             CreateMap<UserDto, User>().ReverseMap();
+            CreateMap<Organization, OrganizationDto>().ReverseMap(); 
         }
 
     }

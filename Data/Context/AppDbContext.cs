@@ -12,7 +12,7 @@ namespace Data.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Server = localhost; Database = Github_Project; User Id = postgres; password = asadbek1502;");
+            optionsBuilder.UseNpgsql("Server = localhost; Database = Github_Project; User Id = postgres; password = 1968;");
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Repository> Repositories { get; set; }
