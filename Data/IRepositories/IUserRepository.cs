@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Entities;
 
 namespace Data.IRepositories
 {
-    //public interface IUserRepository
-    //{
-    //    ValueTask<>
-    //}
+    public interface IUserRepository
+    {
+        ValueTask<User> InsertUserAsync(User user);
+        ValueTask<User> UpdateUserAsync(User user);
+        ValueTask<bool> DeleteUserAysnyc(long id);
+        ValueTask<User> SelectUserAsync(Predicate<User> predicate);
+        IQueryable<User> SelectAllAsync();
+    }
 }
